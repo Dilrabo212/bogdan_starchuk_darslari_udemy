@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosta mashq uchun</title>
+</head>
+<style>
+    #btn {
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        color: white;
+        background-color: red;
+        border: 1px solid green;
+    }
+
+    #btn2 {
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: yellow;
+        border: 1px solid gray;
+    }
+</style>
+
+<body>
+
+    <div class="app">
+
+        <button id="btn" onclick="changeButton('btn')">
+            meni bos :)
+        </button>
+        <button id="btn2" onclick="changeButton('btn2')">
+            click me
+        </button>
+    </div>
+
+    <script>
+        function changeButton(btnId) {
+            const myButton = document.getElementById(btnId);
+            myButton.innerHTML = " Hello vanila JS!"
+        }
+
+
+
+        // function changeButton(btnId) {
+        //     const myButton = document.getElementById(btnId);
+        //     myButton.innerHTML = "hello vanila JS";
+        // }
+
+    </script>
+</body>
+
+</html>

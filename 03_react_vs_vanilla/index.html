@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla vs react</title>
+</head>
+
+<body>
+    <div id="react_app"></div>
+    <div class="" id="vanilla_app"></div>
+</body>
+<script src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+<script>
+    const reactHeading = React.createElement('h1', null, 'Hello JONKA')
+    console.log(reactHeading);
+    const container = document.getElementById('react_app')
+    const root = ReactDOM.createRoot(container)
+    root.render(reactHeading)
+</script>
+<script>
+
+
+    const vanillaJSHeading = document.createElement('h1')
+    vanillaJSHeading.textContent = "muchi puchi asal yorim noz etman!"
+    console.log(vanillaJSHeading);
+    document.getElementById('vanilla_app').appendChild(vanillaJSHeading)
+
+
+    // const heading = document.createElement('h1')
+    // heading.textContent = " Hello from Vanilla JS"
+    // document.getElementById('vanilla_app').appendChild(heading)
+
+</script>
+
+
+</html>
